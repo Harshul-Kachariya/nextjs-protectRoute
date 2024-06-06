@@ -5,13 +5,13 @@ import React, { useEffect } from "react";
 
 const Dashboard = () => {
   const router = useRouter();
-  const paymentStatus = getPaymentData();
+  // const paymentStatus = getPaymentData();
 
-  useEffect(() => {
-    if (paymentStatus === false) {
-      router.push("/payment");
-    }
-  }, [paymentStatus, router]);
+  // useEffect(() => {
+  //   if (paymentStatus === false) {
+  //     router.push("/payment");
+  //   }
+  // }, [paymentStatus, router]);
 
   const handleLogout = () => {
     changeAuthStatus(true);
